@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">饿了</string>
+    <string name="log_in">LOG IN</string>
+    <string name="action_reset">Reset</string>
+</resources>

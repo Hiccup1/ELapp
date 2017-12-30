@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:match="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.user.waimai.MyActivity">
+
+    <ImageView
+        android:id="@+id/header_icon"
+        android:layout_width="@dimen/image_header_dimen"
+        android:layout_height="@dimen/image_header_dimen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/image_header_top_margin"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/tubiao" />
+
+    <com.roger.match.library.MatchTextView
+        android:id="@+id/matchtv"
+        match:text="EL BY"
+        match:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/header_icon"
+        match:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mSeekBar"
+        android:max="100"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/matchtv"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <com.roger.match.library.MatchButton
+        match:text="LXD"
+        android:id="@+id/matchbt"
+        match:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/mSeekBar"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
